@@ -1,0 +1,64 @@
+/**
+El * (asterisco) aplica cambios a todo el contenido que no esten definidas.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/**
+La propiedad CSS "box-sizing" nos permite incluir 
+el relleno y el borde en el ancho y alto total de un elemento (width/height).
+*/
+
+* {
+    color: orange;
+}
+
+p{
+    color: red;
+    width: 300px;
+}
+
+h1 {
+     border: 1px solid green;
+     padding: 10px;
+     margin: 25px 10px 15px 20px;
+     font-weight: bold;
+     color: blue;
+}
+
+/**
+Medidas de Margin, Border y Padding se aplican como: Top, Right, Bottom, Left
+    Margin es color: Naranja
+    Padding es color: Verde
+*/
+
+/**
+box model CSS. Margin, Border, Padding, Content
+    Content: el contenido del cuadro, donde aparecen el texto y las imágenes.
+    Padding: borra un área alrededor del contenido. El relleno es transparente.
+    Border: un borde que rodea el relleno y el contenido.
+    Margin: borra un área fuera del borde. El margen es transparente.
+*/
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#mielemento {
+    color: blueviolet;
+}
+
+/**
+El id se representa como #NombreDeID destro de CSS
+La class se representa con .NombreDeClass en CSS
+*/
+
+.clasecolor {
+    font-weight: bold;
+    color: black;
+}
