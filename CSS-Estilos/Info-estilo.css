@@ -1,5 +1,5 @@
 /**
-El * (asterisco) aplica cambios a todo el contenido que no esten definidas.
+El * (asterisco) es un selector universal que aplica cambios a todo el contenido que no esten definidas.
 */
 
 * {
@@ -49,15 +49,12 @@ section {
     margin: 20px;
 }
 
+/** selector por ID */
 #mielemento {
     color: blueviolet;
 }
 
-/**
-El id se representa como #NombreDeID destro de CSS
-La class se representa con .NombreDeClass en CSS
-*/
-
+/** selector por class */
 .clasecolor {
     font-weight: bold;
     color: black;

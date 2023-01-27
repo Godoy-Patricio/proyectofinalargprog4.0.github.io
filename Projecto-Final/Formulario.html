@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario CV</title>
+  <link rel="icon" type="image/x-icon" href="/Projecto-Final/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/Projecto-Final/Estilo-form.css"/>
+</head>
+<body>
+  <script src="Java-script/vinculado.js"></script>
+
+  <div class="flex-container">
+    <form action="/action_page.php" method="post">
+      <div>
+        <fieldset>
+          <legend>Información personal</legend><br>
+            <label for="fname">Nombre <button type="button" id="botonalerta">?</button></label>
+            <input type="text" id="lname" name="firstname" placeholder="Tu Nombre..."><br>
+        
+            <label for="lname">Apellido</label>
+            <input type="text" id="fname" name="lastname" placeholder="Tu Apellido..."><br>
+
+            <label for="Genero">Genero</label>
+              <select id="Genero" name="Genero">
+                <option value="Indefinido"></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select><br>
+
+            <label for="E-mail">E-mail</label>
+            <input type="text" name="E-mail" placeholder="Ingrese su E-mail" required/><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Educacion</legend><br>
+            <input type="checkbox" name="Educacion"> Primaria <br>
+            <input type="checkbox" name="Educacion"> Secundario <br>
+            <input type="checkbox" name="Educacion"> Superior <br>
+            <input type="text" name="Universidad" placeholder="Validacion de estudios superiores (universidad)"><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Experiencia</legend><br>
+            <label for="Experiencia">Experiencia Profesional</label><br>
+            <textarea name="mensaje">Tu experiencia profesional</textarea><br>
+
+            <label for="comp. Data">Datos Complementarios</label><br>
+            <textarea name="mensaje">Tus Capacidades y habilidades, seminarios, formacion comp., cursos, otros...</textarea><br>
+        </fieldset>
+
+        <div style="text-align: center;">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

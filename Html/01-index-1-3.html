@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantica web y favicon</title>
+<!-- (tittle): especifica un título para la página HTML (que se muestra en la barra de título del navegador o en la pestaña de la página)  -->
+
+    <link rel="icon" type="image/x-icon" href="--inserte aqui su link--/favicon.ico">
+<!-- Un favicon es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador.  -->
+
+</head>
+<body>
+
+   <!--
+  <div style="text-align: center;">
+    <img src="/Projecto-Final/img/avatar61.png" width="300px" height="300px">
+  </div>
+  -->
+
+<!-- (body): define el cuerpo del documento y es un contenedor de todos los contenidos visibles, como encabezados, párrafos, imágenes, hipervínculos, tablas, listas, etc.  -->
+    
+  <h1>Título 1</h1>
+    
+  <p>Hola mundo!</p>
+    
+<!-- lista no ordenada -->
+  <ul>
+    <li>menu 1</li>
+    <li>menu 2</li>
+    <li>menu 3</li>
+  </ul>
+
+  <hr> <!-- linea horizontal -->
+  
+<!-- lista ordenada -->
+  <ol>
+    <li>menu 4</li>
+    <li>menu 5</li>
+    <li>menu 6</li>
+  </ol>
+
+  <span>Span por aqui</span>
+  <p>Parrafo en <strong>negritas</strong></p>
+  <p>parrafo en <em>cursiva</em></p>
+  <p><s>parrafo tachado</s></p>
+
+  <!--  enlaces a seleccion interna -->
+  <a href="#parrafo-1">parrafo 1</a>
+  <a href="#parrafo-2">parrafo 2</a>
+  <!-- enlaces a seleccion externa -->
+  <a href="link aqui" rel="noopener noreferrer"><img src="link de la img" alt="aqui va una img"></a>
+  <!-- etiqueta <a> crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página-->
+
+  <main class="main">
+    <h2>Titulo 2</h2>
+  
+    <h3 id="parrafo-1">Titulo 3</h3>
+  
+    <p>clic para acceder al <a href="texto a link(agrega tu link)" rel="noopener noreferrer">contenido extra</a></p>
+  
+    <h3 id="parrafo-2">Titulo 4</h3>
+  
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quaerat dolores rem ea, repellat ducimus ipsum culpa doloremque in excepturi architecto quasi totam tempora eum. Excepturi cupiditate ipsa autem praesentium.</p>
+  
+    <img src="link de img" alt="aqui va una img">
+  </main>
+
+<!-- no semánticos : <div>y <span>- No dice nada sobre su contenido.semánticos : <form>, <table>y <article>- Define claramente su contenido.  -->
+
+<img src="--inserte aqui su link--" alt="imagen no disponible" height="500px" width="500px"/>
+<!-- src: especifica la ruta a la imagen
+     alt: especifica un texto alternativo para la imagen  -->
+    
+<!-- command terminal: "git diff *nombre del archivo" para revisar modificaciones -->
+<!-- commit: se los referancia con los primeros siete(7) caracteres -->
+
+<div class="clearfix">
+  <div class="img-container">
+  <img src="link de img" alt="img text error" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="link de img" alt="img text error" style="width:100%">
+  </div>
+  <div class="img-container">
+  <img src="link de img" alt="img text error" style="width:100%">
+  </div>
+
+<!--  img-container style
+  * {
+    box-sizing: border-box;
+  }
+
+  .img-container {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+-->
+</div>
+</body>
+</html>

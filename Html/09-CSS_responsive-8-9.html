@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  Responsive web design usa CSS y HTML para cambiar el tamaño, ocultar, reducir, 
+      ampliar o mover el contenido para que se vea bien en cualquier pantalla.  -->
+    <title>Css y responsive</title>
+    <!-- Open Graph Data: Ejemplo-->
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+<!--  href: hace referencia a la url absoluta o relativa del directorio CSS  -->
+
+<!-- Media Queries: Utiliza la regla @media para incluir un bloque de propiedades CSS 
+     solo si se cumple una determinada condición.
+     Si la ventana del navegador tiene 600 px o menos, el color de fondo será azul claro  -->
+    <style>
+        body {
+          background-color: lightgreen;
+        }
+        
+        @media only screen and (max-width: 600px) {
+          body {
+            background-color: lightblue;
+          }
+        }
+        </style>
+</head>
+<body>
+
+  <section>
+    <h2>Titulo H2</h2>
+    
+    <p>parrafo</p>
+    
+<!--  El id se representa como #NombreDeID destro de CSS
+      La class se representa con .NombreDeClass en CSS  -->
+    <ul>
+        <li id="mielemento">elemento 1</li>
+        <li class="clasecolor">elemento 2</li>
+        <li>elemento 3</li>
+    </ul>
+  </section>
+
+</body>
+</html>
